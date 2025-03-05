@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATE=$(date +%F)
-LOGSDIR=/tmp
+LOGSDIR=/home/centos/roboshop_automation
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$0-$DATE.log
 USERID=$(id -u)
