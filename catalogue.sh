@@ -79,6 +79,6 @@ yum install mongodb-org-shell -y &>>$LOGFILE
 
 VALIDATE $? "Installing mongodb-org-shell"
 
-mongo --host mongodb.joindevops.online </app/schema/catalogue.js &>>$LOGFILE
+mongo --host mongodb.joindevops.sbs </app/schema/catalogue.js &>>$LOGFILE
 
 VALIDATE $? "Loading Schema"
