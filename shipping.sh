@@ -44,7 +44,7 @@ VALIDATE $? "Downloading shiiping.zip artifactory"
 
 cd /app &>>$LOGFILE
 
-VALIDATE $? "change directory"
+VALIDATE $? "Moving to app directory"
 
 unzip /tmp/shipping.zip &>>$LOGFILE
 
