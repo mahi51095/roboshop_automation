@@ -9,4 +9,4 @@
     - name: Start Nginx using yum
       ansible.builtin.service:
         name: nginx
-        state: iStarted
+        state: started
