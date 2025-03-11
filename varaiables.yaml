@@ -5,7 +5,7 @@
     COURSE: Devops
     TRAINER: Shiva
     DURATION: 3 months
-  vars:
+  
   tasks:
   - name: Print hello world
     ansible.builtin.debug:
