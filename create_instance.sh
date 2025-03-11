@@ -22,6 +22,24 @@ do
         --security-group-ids "$SECURITY_GROUP_ID" \
         --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" | jq -r '.Instances[0].PrivateIpAddress')
     echo "Creating $i instance : $IP_ADDRESS"
+
+    #aws route53 change-resource-record-sets --hosted-zone-id ZXXXXXXXXXXXXXX \
+#--change-batch '{
+ # "Changes": [{
+ #   "Action": "CREATE",
+ #   "ResourceRecordSet": {
+  #    "Name": "example.com",
+ #     "Type": "A",
+  #    "TTL": 300,
+  #    "ResourceRecords": [{ "Value": "192.168.1.10" }]
+ #   }
+ # }]
+#}'
+
 done
 
 #Tag the instance
+#Add route 53 record
+
+#Improvemnt
+#Check already created instance or not

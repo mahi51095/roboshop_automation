@@ -1,0 +1,21 @@
+- name: Mahesh Lingabathula
+  dob : 05-05-2005
+  address:
+  city : Hyd
+  country : India
+  addresses:
+- type: perm
+  city: Hyd
+- type: Current
+  city: Bng
+
+- name: Mahesh Lingabathula
+  dob : 05-05-2005
+  address:
+  city : Hyd
+  country : India
+  addresses:
+- type: perm
+  city: Hyd
+- type: Current
+  city: Bng

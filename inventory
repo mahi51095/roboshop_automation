@@ -1,0 +1,5 @@
+[mongodb]
+roboshop-us-dev-db-mongodb-01.joindevops.sbs
+
+[app]
+roboshop-in-prod-app-cart-01.joindevops.sbs
