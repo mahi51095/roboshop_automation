@@ -1,6 +1,5 @@
-- name: ping the node
+- name: Ping the node
   hosts: mongodb
-#List of tasks
   tasks:
-- name: Pinging the server
-  ansible.builtin.ping:
+    - name: Pinging the server
+      ansible.builtin.ping:
