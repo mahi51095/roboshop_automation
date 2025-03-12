@@ -10,5 +10,5 @@
      private: true #we cant see the value entered on screen
      tasks:
    - name: print variables value
-       ansible.builtin.debug:
-         msg: "username: {{USERNAME}}, password: {{PASSWORD}}"
+     ansible.builtin.debug:
+     msg: "username: {{USERNAME}}, password: {{PASSWORD}}"
