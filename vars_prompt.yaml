@@ -1,3 +1,4 @@
+
 - name: variables from prompt
   hosts: localhost
   vars_prompt:
