@@ -1,0 +1,10 @@
+- name: create user
+  hosts: localhost
+  tasks:
+  - name: check user exist or not
+   #when you want ot run linux cmds directly, if ansible module not avail
+    ansible.builtin.command: id roboshop
+    register: output #var name
+  - name: print the cmd output
+    ansible.builtin.debug:
+     msg: "output is: {{output}}"
