@@ -4,3 +4,12 @@
    - name: print var from cmd line
      ansible.builtin.debug:
       msg: "The value of var couse is: {{COURSE}}"
+
+      #Preference of variables
+      #cmd line
+      #task level
+      #vars-files
+      #prompt
+      #playlevel
+      #inventory
+      #Roles
