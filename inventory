@@ -1,5 +1,9 @@
 [mongodb]
 172.31.27.4
 
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
+
 #[app]
 #roboshop-in-prod-app-cart-01.joindevops.sbs
