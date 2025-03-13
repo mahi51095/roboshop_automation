@@ -13,18 +13,18 @@
      AWS: 7
      Docker: 7
   tasks:
-   - name: print variables names
-     ansible.builtin.debug:
+  - name: print variables names
+    ansible.builtin.debug:
      msg: "{{AGE}}"
-   - name: print variables names
-     ansible.builtin.debug:
+  - name: print variables names
+    ansible.builtin.debug:
      msg: "{{NAME}}"
-   - name: print variables names
-     ansible.builtin.debug:
+  - name: print variables names
+    ansible.builtin.debug:
      msg: "{{isDevOps}}"
-   - name: print variables names
-     ansible.builtin.debug:
+  - name: print variables names
+    ansible.builtin.debug:
      msg: "{{skills}}"
-   - name: print variables names
-     ansible.builtin.debug:
+  - name: print variables names
+    ansible.builtin.debug:
      msg: "{{Experience}}"
