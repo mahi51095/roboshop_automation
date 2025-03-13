@@ -4,4 +4,5 @@
    - name: print mongodb username
      ansible.builtin.debug:
       msg: "username is: {{MONGO_USERNAME}}"
+     ansible.builtin.debug:
       msg: "DB name is: {{MONGO_DB}}"
