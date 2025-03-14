@@ -6,7 +6,6 @@
     TRAINER: Shiva
     DURATION: 3 months
   
-  
   tasks:
   - name: Print hello world
     ansible.builtin.debug:
