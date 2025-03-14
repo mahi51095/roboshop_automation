@@ -13,12 +13,12 @@
        state: started
        enabled: yes
 
-    - name: remove html dir
+    - name: remove html directory
       ansible.builtin.file:
       path: /usr/share/nginx/html
       state: absent
     
-    - name: create html dir
+    - name: create html directory
       ansible.builtin.file:
       path: /usr/share/nginx/html
       state: directory
