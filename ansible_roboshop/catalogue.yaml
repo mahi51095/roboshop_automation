@@ -1,5 +1,5 @@
 - name: Setup NPM Source
-  hosts: 54.82.59.31
+  hosts: node1
   become: yes
   tasks:
     - name: Install curl
