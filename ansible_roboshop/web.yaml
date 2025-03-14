@@ -44,6 +44,10 @@
         src: roboshop.conf
         dest: /etc/nginx/default.d/roboshop.conf 
     
+    - name: extract web artifact
+      ansible.builtin.shell: mongo --host 172.31.93.230 </app/schema/catalogue.js
+
+    
     - name: restart nginx
       ansible.builtin.service:
        name: nginx
