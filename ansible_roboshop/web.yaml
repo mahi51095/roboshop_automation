@@ -12,15 +12,20 @@
        name: nginx
        state: started
        enabled: yes
+    
+    - name: Open port 80 in the firewall
+      ansible.builtin.shell: 
+       firewall-cmd --add-service=http --permanent
+       firewall-cmd --reload
 
     - name: remove html directory
       ansible.builtin.file:
-       path: /usr/share/nginx/html
+       path: /usr/share/nginx/html/*
        state: absent
     
     - name: create html directory
       ansible.builtin.file:
-       path: /usr/share/nginx/html
+       path: /usr/share/nginx/html/*
        state: directory
     
     - name: Download web artifact
