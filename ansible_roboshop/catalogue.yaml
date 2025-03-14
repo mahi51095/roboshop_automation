@@ -9,3 +9,30 @@
 
     - name: Download and Run Node.js Setup Script
       ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+    
+    - name: Install nodejs
+      ansible.builtin.yum:
+        name: nodejs
+        state: installed
+    
+    - name: Check user exist or not
+      ansible.builtin.command: id roboshop
+      register: out
+      ignore_errors: true
+
+    - when: out.rc != 0
+      name: create user roboshop
+      become: yes
+      ansible.builtin.user:
+       name: roboshop
+    
+    - name: check /app directory exists or not
+      ansible.built.stat:
+       path: /app
+      register: directory
+
+    - name: print dir status
+      ansible.builtin.debug:
+       msg: "output: {{directory}}"
+
+      
