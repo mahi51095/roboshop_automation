@@ -27,7 +27,7 @@
        name: roboshop
     
     - name: check /app directory exists or not
-      ansible.built.stat:
+      ansible.builtin.stat:
        path: /app
       register: directory
 
