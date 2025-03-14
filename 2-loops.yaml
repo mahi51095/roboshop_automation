@@ -8,4 +8,5 @@
      state: installed
     loop:
     - nginx
-    - postmap
+    - nodejs
+    - git
