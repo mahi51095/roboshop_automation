@@ -75,8 +75,14 @@
        name: mongodb-org
        state: installed
     
-    - name: load catalogue data
-      ansible.builtin.command: mongo --host mongodb </app/schema/catalogue.js
+    - name: Load catalogue data into MongoDB
+      ansible.builtin.shell: "mongo --host 127.0.0.1 < /app/schema/catalogue.js"
+      register: mongo_output
+      ignore_errors: yes
+
+    - debug:
+      var: mongo_output.stdout_lines
+
     
     - name: Restart catalogue service
       ansible.builtin.systemd:
