@@ -28,6 +28,11 @@
         url: https://roboshop-builds.s3.amazonaws.com/web.zip
         dest: /tmp
     
+    - name: Create /app directory (if not exists)
+      ansible.builtin.file:
+        path: /app
+        state: directory
+    
     - name: extract web artifact
       ansible.builtin.unarchive:
         src: /tmp/web.zip
