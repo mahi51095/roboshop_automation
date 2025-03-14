@@ -63,7 +63,7 @@
     
     - name: Reload daemon
       ansible.builtin.systemd:
-      daemon_reload: yes
+      daemon_reload: true
     
     - name: copy mongo rep to yum.repo.d
       ansible.builtin.copy:
