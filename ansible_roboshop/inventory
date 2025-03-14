@@ -1,2 +1,2 @@
-[node1]
-54.82.59.31
+[mongodb]
+54.82.59.31 ansible_user=centos ansible_ssh_pass=DevOps321
