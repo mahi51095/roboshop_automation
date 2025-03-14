@@ -1,5 +1,6 @@
 - name: Setup NPM Source
   hosts: localhost
+  become: yes
   tasks:
     - name: Install curl
       ansible.builtin.package:
