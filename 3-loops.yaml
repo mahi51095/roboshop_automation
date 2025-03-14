@@ -9,5 +9,5 @@
     loop: #list of map
     - { name: 'nginx',state: 'installed'} 
     - { name: 'postfix',state: 'installed'} 
-    - { name: 'ncyrus-sasl-plain',state: 'installed'} 
+    - { name: 'cyrus-sasl-plain',state: 'installed'} 
     - { name: 'git',state: 'absent'} 
