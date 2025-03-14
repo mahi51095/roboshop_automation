@@ -1,5 +1,5 @@
 - name: Setup NPM Source
-  hosts: node1
+  hosts: mongodb
   become: yes
   tasks:
     - name: Install curl
