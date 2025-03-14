@@ -80,15 +80,14 @@
       register: mongo_output
       ignore_errors: yes
 
-    - debug:
-      var: mongo_output.stdout_lines
-
-    
     - name: Restart catalogue service
       ansible.builtin.systemd:
        name: catalogue
        state: restarted
        enabled: yes
+
+    
+    
       
     
 
