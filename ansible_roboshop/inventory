@@ -1,2 +1,5 @@
 [mongodb]
 54.82.59.31 ansible_user=centos ansible_ssh_pass=DevOps321
+
+[web]
+54.209.61.149
