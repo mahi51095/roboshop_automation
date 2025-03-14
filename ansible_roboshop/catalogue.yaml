@@ -76,7 +76,7 @@
        state: installed
     
     - name: Load catalogue data into MongoDB
-      ansible.builtin.shell: "mongo --host 127.0.0.1 < /app/schema/catalogue.js"
+      ansible.builtin.shell: "mongo --host 172.31.27.4 < /app/schema/catalogue.js"
       register: mongo_output
       ignore_errors: yes
 
