@@ -63,7 +63,7 @@
     
     - name: Reload daemon
       ansible.builtin.systemd:
-      daemon_reload: true
+       daemon_reload: yes
     
     - name: copy mongo rep to yum.repo.d
       ansible.builtin.copy:
@@ -78,11 +78,11 @@
     - name: load catalogue data
       ansible.builtin.command: mongo --host mongodb </app/schema/catalogue.js
     
-    - name: restart catalogue
-      ansible.builtin.service:
+    - name: Restart catalogue service
+      ansible.builtin.systemd:
        name: catalogue
        state: restarted
-       enabled: true
+       enabled: yes
       
     
 
