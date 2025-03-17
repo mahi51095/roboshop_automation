@@ -13,8 +13,13 @@
        state: started
        enabled: yes
     
-    - name: Open port 80 in the firewall
-      command: "firewall-cmd --add-service=http --permanent && firewall-cmd --reload"
+    - name: Open port 80 in Firewalld
+      ansible.posix.firewalld:
+       service: http
+       permanent: yes
+       state: enabled
+       immediate: yes
+
 
     - name: remove html directory
       ansible.builtin.file:
