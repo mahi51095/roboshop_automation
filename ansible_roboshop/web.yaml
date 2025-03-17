@@ -14,9 +14,7 @@
        enabled: yes
     
     - name: Open port 80 in the firewall
-      ansible.builtin.shell: 
-       firewall-cmd --add-service=http --permanent
-       firewall-cmd --reload
+      command: "firewall-cmd --add-service=http --permanent && firewall-cmd --reload"
 
     - name: remove html directory
       ansible.builtin.file:
