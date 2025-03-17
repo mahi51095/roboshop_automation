@@ -12,16 +12,6 @@
        name: nginx
        state: started
        enabled: yes
-    
-    - name: Open port 80 in Firewalld
-      ansible.posix.firewalld:
-       service: http
-       permanent: yes
-       state: enabled
-       immediate: yes
-      become: yes
-
-
 
     - name: remove html directory
       ansible.builtin.file:
@@ -56,7 +46,6 @@
     
   
 
-    
     - name: restart nginx
       ansible.builtin.service:
        name: nginx
