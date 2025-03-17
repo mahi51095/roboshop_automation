@@ -1,5 +1,5 @@
 - name: Setup NPM Source
-  hosts: mongodb
+  hosts: catalogue
   become: yes
   tasks:
     - name: Install curl
