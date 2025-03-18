@@ -8,4 +8,4 @@ catalogue.joindevops.sbs
 web.joindevops.sbs
 
 [redis]
-3.84.38.224
+redis.joindevops.sbs
