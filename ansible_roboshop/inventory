@@ -6,3 +6,6 @@ catalogue.joindevops.sbs
 
 [web]
 web.joindevops.sbs
+
+[redis]
+redis.joindevops.sbs
