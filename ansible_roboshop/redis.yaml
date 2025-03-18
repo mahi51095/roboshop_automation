@@ -1,5 +1,5 @@
 - name: Install redis componrnt
-  hosts: redis
+  hosts: 3.84.38.224
   become: yes
   tasks:
   - name: Install redis repo
